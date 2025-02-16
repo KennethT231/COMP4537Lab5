@@ -28,7 +28,7 @@ db.connect(err => {
     });
 });
 
-http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
     res.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -66,4 +66,9 @@ http.createServer((req, res) => {
     } else {
         res.end(JSON.stringify({ error: "Invalid request" }));
     }
-}).listen(3000, () => console.log("Server running on port 3000"));
+});
+
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`)
+})
