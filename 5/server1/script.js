@@ -1,4 +1,4 @@
-const apiUrl = "http://localhost:3000"; // Update with actual API URL
+const apiUrl = "https://monkfish-app-ym6ah.ondigitalocean.app/"; // Update with actual API URL
 
 document.getElementById("insertData").addEventListener("click", async () => {
     const query = `INSERT INTO patient (name, dateOfBirth) VALUES 
