@@ -1,4 +1,10 @@
-const apiUrl = "https://monkfish-app-ym6ah.ondigitalocean.app/lab5/api/v1/sql";
+/**
+ * This lab was developed with assistance from ChatGPT-4.
+ * ChatGPT was used for debugging, API request improvements, CORS handling, and SQL query fixes.
+ * All code was reviewed and tested by me.
+ * @author Kenneth Tran A01317266
+ */
+const apiUrl = "https://monkfish-app-ym6ah.ondigitalocean.app/lab5/api/v1/sql/";
 
 // Insert Data (POST Request)
 document.getElementById("insertData").addEventListener("click", async () => {
