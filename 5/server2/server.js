@@ -94,7 +94,7 @@ setInterval(() => {
             }
         });
     }
-}, 30000); // Ping every 30 seconds
+}, 300000); // Ping every 5 minutes
 
 const server = http.createServer((req, res) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
